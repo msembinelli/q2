@@ -1,6 +1,7 @@
 language: c
 
 install:
+  - pip install urllib3[secure]
   - pip install cpp-coveralls
 
 # command to run tests

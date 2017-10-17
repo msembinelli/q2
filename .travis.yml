@@ -6,6 +6,11 @@ python:
   - 2.7
 
 install:
+  - git clone https://github.com/sembinelli/mpm.git
+  - cd mpm
+  - pip install --user .
+  - cd ..
+  - mpm load
   - pip install --user -U pip
   - pip install --user urllib3[secure]
   - pip install --user cpp-coveralls

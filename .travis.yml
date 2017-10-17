@@ -3,9 +3,10 @@ language: c
 sudo: required
 
 python:
-  - 2.7
+  - 2.7.12
 
 install:
+  - pip install -U pip
   - pip install urllib3[secure]
   - pip install cpp-coveralls
 

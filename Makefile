@@ -6,7 +6,7 @@ LFLAGS=-lgcov --coverage
 # link
 q2_tests: $(OBJS)
 	gcc $(OBJS) $(LFLAGS) -o q2_tests
-	gcov -o q2_tests.c
+	gcov test/q2_tests.c
 
 # pull in dependency info for *existing* .o files
 -include $(OBJS:.o=.d)

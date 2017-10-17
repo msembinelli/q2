@@ -6,7 +6,7 @@ python:
   - 2.7
 
 install:
-  - git clone https://github.com/sembinelli/mpm.git
+  - git clone git://github.com/msembinelli/mpm.git
   - cd mpm
   - pip install --user .
   - cd ..

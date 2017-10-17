@@ -3,12 +3,12 @@ language: c
 sudo: required
 
 python:
-  - 2.7.12
+  - 2.7
 
 install:
-  - pip install -U pip
-  - pip install urllib3[secure]
-  - pip install cpp-coveralls
+  - pip install --user -U pip
+  - pip install --user urllib3[secure]
+  - pip install --user cpp-coveralls
 
 # command to run tests
 script:

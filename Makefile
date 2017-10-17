@@ -6,7 +6,7 @@ LFLAGS=-lgcov -fprofile-arcs
 # link
 q2_tests: $(OBJS)
 	gcc $(OBJS) $(LFLAGS) -o q2_tests
-	./q2_tests.exe
+	./q2_tests
 	gcov q2.c
 
 # pull in dependency info for *existing* .o files

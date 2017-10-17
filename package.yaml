@@ -9,4 +9,4 @@ travis:
     name: unity
     path: test/unity
     reference: 60def109a7cfa90aafee6758e7a61c199b83ac4f
-    remote_url: git@github.com/ThrowTheSwitch/Unity.git
+    remote_url: git://github.com/ThrowTheSwitch/Unity.git

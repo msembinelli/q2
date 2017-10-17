@@ -1,0 +1,10 @@
+language: c
+
+install:
+  - pip install cpp-coveralls
+
+# command to run tests
+script:
+  make
+after_success:
+  coveralls --exclude lib --exclude tests --gcov-options '\-lp'

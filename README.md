@@ -12,6 +12,8 @@ The only requirements are `gcc`, `make` and `mpm`:
 
 ## INSTALL
 
+    mpm load
+
     make
 
 ## RUN

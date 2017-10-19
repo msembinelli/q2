@@ -5,6 +5,7 @@
  * Description:
  *     Implementation for power of two queue.
  *
+ * Copyright (c) 2017 Matthew Sembinelli
  *********************************************************/
 /**********************************************************
  * Includes
@@ -185,7 +186,7 @@ uint32_t q2_empty(q2_context_t* const ctx, bool* const empty)
 {
     q2_return_t ret = Q2_SUCCESS;
 
-    if(NULL == ctx)
+    if(NULL == ctx || NULL == empty)
     {
         ret = Q2_ERROR_NULL_PARAMETER;
     }
@@ -223,7 +224,7 @@ uint32_t q2_full(q2_context_t* const ctx, bool* const full)
 {
     q2_return_t ret = Q2_SUCCESS;
 
-    if(NULL == ctx)
+    if(NULL == ctx || NULL == full)
     {
         ret = Q2_ERROR_NULL_PARAMETER;
     }
@@ -261,7 +262,7 @@ uint32_t q2_length(q2_context_t* const ctx, uint32_t* const length)
 {
     q2_return_t ret = Q2_SUCCESS;
 
-    if(NULL == ctx)
+    if(NULL == ctx || NULL == length)
     {
         ret = Q2_ERROR_NULL_PARAMETER;
     }
@@ -274,11 +275,11 @@ uint32_t q2_length(q2_context_t* const ctx, uint32_t* const length)
     {
         if(true == ctx->full)
         {
-        *length = ctx->max_length;
+            *length = ctx->max_length;
         }
         else
         {
-        *length = (((ctx->head) - (ctx->tail)) & (ctx->max_length - 1));
+            *length = (((ctx->head) - (ctx->tail)) & (ctx->max_length - 1));
         }
     }
 

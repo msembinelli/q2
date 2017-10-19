@@ -51,5 +51,12 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
+# mpm and module paths
 .mpm/
 test/unity/
+
+# gcov files
+*.gcov
+*.gcda
+*.gcno
+*.swp

@@ -5,6 +5,7 @@
  * Description:
  *     Header for power of two queue.
  *
+ * Copyright (c) 2017 Matthew Sembinelli
  *********************************************************/
 #ifndef Q2_H
 #define Q2_H
